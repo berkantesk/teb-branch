@@ -177,7 +177,9 @@
 	</div>
 	<!-- END LOGIN -->
 	<!-- BEGIN COPYRIGHT -->
-        <jsp:include page="inc/footer.jsp" flush="true" />
+        <div class="copyright">
+		2013 &copy; Tebeshir
+	</div>>    
 	<!-- END COPYRIGHT -->
         
 <!-- END BODY -->

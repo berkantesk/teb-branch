@@ -31,19 +31,11 @@
             <i class="fa fa-angle-down"></i>
         </a>
         <ul class="dropdown-menu">
-            <li><a href="../profile/student.jsp"><i class="fa fa-user"></i> Profil</a>
-            </li>
-            <li><a href="../page_calendar.html"><i class="fa fa-calendar"></i> Ajanda</a>
-            </li>
-            <li><a href="../inbox.html"><i class="fa fa-envelope"></i> Mesajlar <span class="badge badge-danger">3</span></a>
-            </li>
+            <li><a href="../profile/student.jsp"><i class="fa fa-user"></i> Profil</a></li>
+            <!--<li><a href="../page_calendar.html"><i class="fa fa-calendar"></i> Ajanda</a></li>-->
+            <li><a href="../inbox.html"><i class="fa fa-envelope"></i> Mesajlar <span class="badge badge-danger">3</span></a></li>
             <li class="divider"></li>
-            <li><a href="javascript:;" id="trigger_fullscreen"><i class="fa fa-move"></i> Tam Ekran</a>
-            </li>
-            <li><a href="extra_lock.html"><i class="fa fa-lock"></i> Ekranı Kilitle</a>
-            </li>
-            <li><a href="logout.jsp"><i class="fa fa-key"></i> Çıkış</a>
-            </li>
+            <li><a href="logout.jsp"><i class="fa fa-key"></i> Çıkış</a></li>
         </ul>
     </body>
 </html>
