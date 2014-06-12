@@ -11,11 +11,6 @@
 <%@page import="com.tebeshir.classes.Student"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>tebeshir - board followers</title>
-    </head>
     <%
         int boardID = 0;
 
@@ -42,18 +37,18 @@
         // 2. 
 
     %>
-    <body>
-        <div class="tab-pane" id="tab_1_2">
+
+    <div class="tab-pane" id="tab_1_2">
             <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 290px;">
                 <div class="scroller" style="height: 290px; overflow: hidden; width: auto;" data-always-visible="1" data-rail-visible1="1">
                     <!-- FOLLOWER EXAMPLE BEGIN -->
-                    <div class="row">
+                    <div class="row followers">
                         <%
                             for (int i = 0; i < boardFollowers.size(); i++) {
                                 School followerSchool = new School();
                                 String schoolName = followerSchool.getSchoolName(boardFollowers.get(i).getSchoolID());
                         %>
-                        <div class="col-md-6 user-info">
+                        <div class="col-md-4 user-info">
                             <img alt="" src="../images/avatar.png" class="img-responsive">
                             <div class="details">
                                 <div>
@@ -72,5 +67,3 @@
                 <div class="slimScrollBar" style="background-color: rgb(161, 178, 189); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-top-left-radius: 7px; border-top-right-radius: 7px; border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; z-index: 99; right: 1px; height: 254.84848484848484px; background-position: initial initial; background-repeat: initial initial;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-top-left-radius: 7px; border-top-right-radius: 7px; border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; background-color: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px; background-position: initial initial; background-repeat: initial initial;"></div>                                    
             </div>
         </div>
-    </body>
-</html>

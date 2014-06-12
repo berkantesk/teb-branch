@@ -28,7 +28,7 @@
         <link href="../styles/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css"/>
         <!-- END PAGE LEVEL PLUGIN STYLES -->
         <!-- BEGIN THEME STYLES --> 
-        <link href="../styles/style-metronic.css" rel="stylesheet" type="text/css"/>
+        <link href="../styles/style-core.css" rel="stylesheet" type="text/css"/>
         <link href="../styles/style.css" rel="stylesheet" type="text/css"/>
         <link href="../styles/style-responsive.css" rel="stylesheet" type="text/css"/>
         <link href="../styles/plugins.css" rel="stylesheet" type="text/css"/>

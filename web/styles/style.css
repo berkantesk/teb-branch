@@ -2509,7 +2509,7 @@ Custom tabs
    -webkit-border-radius: 0; 
    -moz-border-radius: 0; 
    border-radius: 0; 
-   padding: 10px;
+   padding: 10px 0;
 }
 
 .tabbable-custom.nav-justified .tab-content {

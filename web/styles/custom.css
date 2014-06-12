@@ -6,3 +6,7 @@
   .post-social input{padding:0}
   .post-social .count{display: inline-block;font-weight: bold}
   /*post css end */
+  
+  /*Followers*/
+  .row.followers{margin:0;padding:0}
+  /*Followers end*/
