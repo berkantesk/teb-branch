@@ -13,8 +13,24 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en" class="no-js">
     <head>
-        <jsp:include page="inc/head.jsp" flush="true" />
-        <style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style>
+        <jsp:include page="../inc/head.jsp" flush="true" />
+        <style type="text/css">.jqstooltip { 
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                visibility: hidden;
+                background: rgb(0, 0, 0) transparent;
+                background-color: rgba(0,0,0,0.6);
+                filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+                -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+                color: white;
+                font: 10px arial, san serif;
+                text-align: left;
+                white-space: nowrap;
+                padding: 5px;
+                border: 1px solid white;
+                z-index: 10000;
+            }.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style>
     </head>
     <%
         Student currentStudent = (Student) request.getAttribute("currentStudent");
@@ -58,14 +74,14 @@
             <div class="header-inner">
 
                 <!-- BEGIN LOGO -->  
-                <a class="navbar-brand" style="margin-left: 160px" href="home/home.jsp">
-                    <img src="images/logo.png" alt="logo" class="img-responsive">
+                <a class="navbar-brand" style="margin-left: 160px" href="../home/home.jsp">
+                    <img src="../images/logo.png" alt="logo" class="img-responsive">
                 </a>
                 <!-- END LOGO -->
 
                 <!-- BEGIN RESPONSIVE MENU TOGGLER -->
                 <a href="javascript:;" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <img src="images/menu-toggler.png" alt="">
+                    <img src="../images/menu-toggler.png" alt="">
                 </a> 
                 <!-- END RESPONSIVE MENU TOGGLER -->
 
@@ -75,21 +91,21 @@
 
                     <!-- BEGIN NOTIFICATION DROPDOWN -->
                     <li class="dropdown" id="header_notification_bar">                        
-                        <jsp:include page="home/notificationDropDown.jsp" flush="true"/>
+                        <jsp:include page="../home/notificationDropDown.jsp" flush="true"/>
                     </li>
                     <!-- END NOTIFICATION DROPDOWN -->
 
 
                     <!-- BEGIN INBOX DROPDOWN -->
                     <li class="dropdown" id="header_inbox_bar">
-                        <jsp:include page="home/inboxDropDown.jsp" flush="true"/>                        
+                        <jsp:include page="../home/inboxDropDown.jsp" flush="true"/>                        
                     </li>
                     <!-- END INBOX DROPDOWN -->
 
 
                     <!-- BEGIN USER DROPDOWN -->
                     <li class="dropdown user">
-                        <jsp:include page="home/profileDropDown.jsp" flush="true"/>
+                        <jsp:include page="../home/profileDropDown.jsp" flush="true"/>
                     </li>
                     <!-- END USER DROPDOWN -->                    
 
@@ -125,14 +141,14 @@
                         <ul class="chats">
                             <!-- TEK BİR POST ÖRNEĞİ BEGIN -->
                             <li class="in">
-                                <img class="avatar img-responsive" alt="" src="images/avatar1.jpg">
+                                <img class="avatar img-responsive" alt="" src="../images/avatar1.jpg">
                                     <div class="message">
                                         <span class="arrow"></span>
-                                        <a href="profile/student.jsp?student2Bvisited=<%=postOwner.getStudentID()%>" class="name"><%=postOwner.getUsername()%></a>
-                                        <a href="home/home.jsp?board2Bvisited=<%=postOwner.getSchoolID()%>" class="name">(<%=postOwnerSchoolName%>)</a>
+                                        <a href="../profile/student.jsp?student2Bvisited=<%=postOwner.getStudentID()%>" class="name"><%=postOwner.getUsername()%></a>
+                                        <a href="../home/home.jsp?board2Bvisited=<%=postOwner.getSchoolID()%>" class="name">(<%=postOwnerSchoolName%>)</a>
                                         <span class="datetime">- <%=dateFormat.format(currentPost.getInsertDate())%></span>
                                         <span class="body">
-                                            <a href="postDetail.jsp?postID=<%=currentPost.getPostID()%>" style="color: black"><%=currentPost.getOriginalMessage()%></a>
+                                            <a href="../postDetail.jsp?postID=<%=currentPost.getPostID()%>" style="color: black"><%=currentPost.getOriginalMessage()%></a>
                                             <br/>
                                             <%
                                                 for (int j = 0; j < currentPost.getPostTags().size(); j++) {
@@ -140,9 +156,9 @@
                                             %>
                                             <a href="#tab_1_3">Tags</a>
                                             <%
-                                                    }
+                                                }
                                             %>
-                                            <a href="tag/tag.jsp?board2Bvisited=<%=currentStudent.getSchoolID()%>&tag=<%=currentPost.getPostTags().get(j).getTagId()%>">
+                                            <a href="../tag/tag.jsp?board2Bvisited=<%=currentStudent.getSchoolID()%>&tag=<%=currentPost.getPostTags().get(j).getTagId()%>">
                                                 #<%=currentPost.getPostTags().get(j).getTag()%>
                                             </a>
                                             <%
@@ -154,16 +170,16 @@
                                                     if (myFollowStatus == true) {
                                                 %>
                                                 <span class="btn btn-xs red">
-                                                    <form method="post" action="UnfollowPost?postID=<%=currentPost.getPostID()%>&unfollowerID=<%=currentStudent.getStudentID()%>&returnPage=<%=uri%>" class="dIB">
+                                                    <form method="post" action="../UnfollowPost?postID=<%=currentPost.getPostID()%>&unfollowerID=<%=currentStudent.getStudentID()%>&returnPage=<%=uri%>" class="dIB">
                                                         <input type="submit" class="btn btn-xs red" value="unfollow">
                                                     </form> 
                                                     <span class="count">(<%=currentPost.getFollowerCount()%>)</span>
                                                 </span>
                                                 <%
-                                                    } else {
+                                                } else {
                                                 %>
                                                 <span class="btn btn-xs red">
-                                                    <form method="post" action="FollowPost?postID=<%=currentPost.getPostID()%>&followerID=<%=currentStudent.getStudentID()%>&returnPage=<%=uri%>" class="dIB">
+                                                    <form method="post" action="../FollowPost?postID=<%=currentPost.getPostID()%>&followerID=<%=currentStudent.getStudentID()%>&returnPage=<%=uri%>" class="dIB">
                                                         <input type="submit" class="btn btn-xs red" value="follow">
                                                     </form>
                                                     <span class="count">(<%=currentPost.getFollowerCount()%>)</span>
@@ -176,7 +192,7 @@
                                                     if (myLikeStatus == true) {
                                                 %>
                                                 <span class="btn btn-xs red">
-                                                    <form method="post" action="UnlikePost?postID=<%=currentPost.getPostID()%>&unlikerID=<%=currentStudent.getStudentID()%>&returnPage=<%=uri%>" class="dIB">
+                                                    <form method="post" action="../UnlikePost?postID=<%=currentPost.getPostID()%>&unlikerID=<%=currentStudent.getStudentID()%>&returnPage=<%=uri%>" class="dIB">
                                                         <input type="submit" class="btn btn-xs red" value="unlike">
                                                     </form> 
                                                     <span class="count">(<%=currentPost.getLikerCount()%>)</span>
@@ -185,7 +201,7 @@
                                                 } else {
                                                 %>
                                                 <span class="btn btn-xs red">
-                                                    <form method="post" action="LikePost?postID=<%=currentPost.getPostID()%>&likerID=<%=currentStudent.getStudentID()%>&returnPage=<%=uri%>" class="dIB">
+                                                    <form method="post" action="../LikePost?postID=<%=currentPost.getPostID()%>&likerID=<%=currentStudent.getStudentID()%>&returnPage=<%=uri%>" class="dIB">
                                                         <input type="submit" class="btn btn-xs red" value="like">
                                                     </form> 
                                                     <span class="count">(<%=currentPost.getLikerCount()%>)</span>
@@ -217,27 +233,24 @@
                             <!-- TEK BİR POST ÖRNEĞİ END -->
                         </ul>
                         <div class="tab-content">
-                            <!-- POST DIV BEGIN -->
-                            <div class="tab-pane active" id="tab_1_1">
-                                <ul class="nav nav-tabs">
-                                    <li class="active"><a href="#tab_1_1" data-toggle="tab">(<%=currentPost.getLikerCount()%>) likes</a></li>
-                                </ul>
-                                <!-- POST ATMA ALANI BEGIN -->
-                                <form action="PostNewMessage" method="post" id="newPost">
-                                    <div class="chat-form">
-                                        <div class="input-cont">   
-                                            <input class="form-control" type="text" placeholder="burada bu gereksiz olabilir" name="newComment">
-                                        </div>
-                                        <div class="btn-cont"> 
-                                            <span class="arrow"></span>
-                                            <a href="#" onclick="$('#newPost').submit();" class="btn blue icn-only"><i class="fa fa-check icon-white"></i></a>
-                                        </div>
-                                    </div>
-                                </form>
-                                <!-- POST ATMA ALANI END -->
-                            </div>
-                            <!-- POST DIV END -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#tab_1_1" data-toggle="tab"><%=currentPost.getCommenterCount()%> comments</a></li>
+                                <li class=""><a href="#tab_1_2" data-toggle="tab"><%=currentPost.getLikerCount()%> likes</a></li>
+                                <li class=""><a href="#tab_1_3" data-toggle="tab"><%=currentPost.getFollowerCount()%> followers</a></li>
+                                <li class=""><a href="#tab_1_4" data-toggle="tab"><%=currentPost.getPostTags().size()%> tags</a></li>
+                                <li class=""><a href="#tab_1_5" data-toggle="tab">similar</a></li>
+                            </ul>
 
+                            <jsp:include page="postDetailComments.jsp?postID=<%=currentPost.getPostID()%>" flush="true"/>
+                            
+                            <jsp:include page="postDetailLikers.jsp?postID=<%=currentPost.getPostID()%>" flush="true"/>
+                            
+                            <jsp:include page="postDetailFollowers.jsp?postID=<%=currentPost.getPostID()%>" flush="true"/>
+                            
+                            <jsp:include page="postDetailTags.jsp?postID=<%=currentPost.getPostID()%>" flush="true"/>
+                            
+                            <jsp:include page="postDetailSimilar.jsp?postID=<%=currentPost.getPostID()%>" flush="true"/>
+                        
                         </div>
                     </div>
                     <!-- TABS END -->
@@ -252,7 +265,7 @@
         </div>
         <!-- END CONTAINER -->
         <!-- BEGIN FOOTER -->
-        <jsp:include page="inc/footer.jsp" flush="true" />
+        <jsp:include page="../inc/footer.jsp" flush="true" />
         <!-- END FOOTER -->
     </body>
 </html>
