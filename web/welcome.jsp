@@ -14,7 +14,7 @@
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
-        <jsp:include page="inc/head.jsp" />
+        <jsp:include page="inc/head.jsp" flush="true" />
         <script>
 		jQuery(document).ready(function() {     
 		  App.init();
@@ -427,7 +427,7 @@
 	</div>
 	<!-- END LOGIN -->
 	<!-- BEGIN COPYRIGHT -->
-        <jsp:include page="inc/footer.jsp" />
+        <jsp:include page="inc/footer.jsp" flush="true" />
 	<!-- END COPYRIGHT -->
         
 <!-- END BODY -->

@@ -17,6 +17,8 @@
         <link href="styles/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="styles/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="styles/uniform.default.css" rel="stylesheet" type="text/css"/>
+        <link href="styles/bootstrap-editable.css" rel="stylesheet" type="text/css"/>
+        <link href="styles/address.css" rel="stylesheet" type="text/css"/>
         <!-- END GLOBAL MANDATORY STYLES -->
         <!-- BEGIN PAGE LEVEL PLUGIN STYLES -->
         <link href="styles/daterangepicker-bs3.css" rel="stylesheet" type="text/css"/>
