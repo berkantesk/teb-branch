@@ -252,7 +252,7 @@
         </div>
         <!-- END CONTAINER -->
         <!-- BEGIN FOOTER -->
-        <jsp:include page="inc/head.jsp" />
+        <jsp:include page="inc/footer.jsp" />
         <!-- END FOOTER -->
     </body>
 </html>

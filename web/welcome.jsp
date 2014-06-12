@@ -427,7 +427,7 @@
 	</div>
 	<!-- END LOGIN -->
 	<!-- BEGIN COPYRIGHT -->
-        <jsp:include page="inc/head.jsp" />
+        <jsp:include page="inc/footer.jsp" />
 	<!-- END COPYRIGHT -->
         
 <!-- END BODY -->
