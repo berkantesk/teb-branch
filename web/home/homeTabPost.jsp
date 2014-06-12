@@ -181,7 +181,7 @@
                                 %>
                                 <!-- like button end -->
 
-                                <a href="#newComment" class="btn btn-xs green">comment <b>(<%=allMsgsOfThisBoard.get(i).getCommenterCount()%>)</b></a>
+                                <a href="../postDetail.jsp?postID=<%=allMsgsOfThisBoard.get(i).getPostID()%>" class="btn btn-xs green">comment <b>(<%=allMsgsOfThisBoard.get(i).getCommenterCount()%>)</b></a>
 
                                 <!-- social share -->
                                 <div class="btn-group">
