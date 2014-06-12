@@ -427,9 +427,7 @@
 	</div>
 	<!-- END LOGIN -->
 	<!-- BEGIN COPYRIGHT -->
-	<div class="copyright">
-		2013 &copy; Tebeshir
-	</div>
+        <jsp:include page="inc/head.jsp" />
 	<!-- END COPYRIGHT -->
         
 <!-- END BODY -->
