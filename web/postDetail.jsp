@@ -13,7 +13,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en" class="no-js">
     <head>
-        <jsp:include page="inc/head.jsp" flush="true" />
+        <jsp:include page="/inc/head.jsp" flush="true" />
         <style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style>
     </head>
     <%
@@ -52,52 +52,7 @@
     <body class="page-header-fixed page-footer-fixed" style="">
 
         <!-- BEGIN HEADER -->   
-        <div class="header navbar navbar-inverse navbar-fixed-top">
-
-            <!-- BEGIN TOP NAVIGATION BAR -->
-            <div class="header-inner">
-
-                <!-- BEGIN LOGO -->  
-                <a class="navbar-brand" style="margin-left: 160px" href="home/home.jsp">
-                    <img src="images/logo.png" alt="logo" class="img-responsive">
-                </a>
-                <!-- END LOGO -->
-
-                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
-                <a href="javascript:;" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <img src="images/menu-toggler.png" alt="">
-                </a> 
-                <!-- END RESPONSIVE MENU TOGGLER -->
-
-
-                <!-- BEGIN TOP NAVIGATION MENU -->
-                <ul class="nav navbar-nav pull-right" style="margin-right: 150px">
-
-                    <!-- BEGIN NOTIFICATION DROPDOWN -->
-                    <li class="dropdown" id="header_notification_bar">                        
-                        <jsp:include page="home/notificationDropDown.jsp" flush="true"/>
-                    </li>
-                    <!-- END NOTIFICATION DROPDOWN -->
-
-
-                    <!-- BEGIN INBOX DROPDOWN -->
-                    <li class="dropdown" id="header_inbox_bar">
-                        <jsp:include page="home/inboxDropDown.jsp" flush="true"/>                        
-                    </li>
-                    <!-- END INBOX DROPDOWN -->
-
-
-                    <!-- BEGIN USER DROPDOWN -->
-                    <li class="dropdown user">
-                        <jsp:include page="home/profileDropDown.jsp" flush="true"/>
-                    </li>
-                    <!-- END USER DROPDOWN -->                    
-
-                </ul>
-                <!-- END TOP NAVIGATION MENU -->
-            </div>
-            <!-- END TOP NAVIGATION BAR -->
-        </div>
+        <jsp:include page="/inc/header.jsp" flush="true" />
         <!-- END HEADER -->
 
         <div class="clearfix"></div>

@@ -54,51 +54,7 @@
     <!-- BEGIN BODY -->
     <body class="page-header-fixed page-footer-fixed" style="">
         <!-- BEGIN HEADER -->   
-        <div class="header navbar navbar-inverse navbar-fixed-top">
-            <!-- BEGIN TOP NAVIGATION BAR -->
-            <div class="header-inner">
-
-                <!-- BEGIN LOGO -->  
-                <a class="navbar-brand" href="../home/home.jsp">
-                    <img src="../images/logo.png" alt="logo" class="img-responsive">
-                </a>
-                <!-- END LOGO -->
-
-                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
-                <a href="javascript:;" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <img src="../images/menu-toggler.png" alt="">
-                </a>
-                <!-- END RESPONSIVE MENU TOGGLER -->
-
-
-                <!-- BEGIN TOP NAVIGATION MENU -->
-                <ul class="nav navbar-nav pull-right">
-
-                    <!-- BEGIN NOTIFICATION DROPDOWN -->
-                    <li class="dropdown" id="header_notification_bar">                        
-                        <jsp:include page="../home/notificationDropDown.jsp" flush="true"/>
-                    </li>
-                    <!-- END NOTIFICATION DROPDOWN -->
-
-
-                    <!-- BEGIN INBOX DROPDOWN -->
-                    <li class="dropdown" id="header_inbox_bar">
-                        <jsp:include page="../home/inboxDropDown.jsp" flush="true"/>                        
-                    </li>
-                    <!-- END INBOX DROPDOWN -->
-
-
-                    <!-- BEGIN USER DROPDOWN -->
-                    <li class="dropdown user">
-                        <jsp:include page="../home/profileDropDown.jsp" flush="true"/>
-                    </li>
-                    <!-- END USER DROPDOWN -->                    
-
-                </ul>
-                <!-- END TOP NAVIGATION MENU -->
-            </div>
-            <!-- END TOP NAVIGATION BAR -->
-        </div>
+        <jsp:include page="/inc/header.jsp" flush="true" />
         <!-- END HEADER -->
         <div class="clearfix"></div>
         <!-- BEGIN CONTAINER -->

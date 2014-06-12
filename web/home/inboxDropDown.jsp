@@ -10,7 +10,6 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>tebeshir - inbox drop down</title>
     </head>
     <%
         Student currentStudent = (Student) request.getAttribute("currentStudent");
