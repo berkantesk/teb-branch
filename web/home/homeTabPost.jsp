@@ -115,7 +115,7 @@
                         <a href="home.jsp?board2Bvisited=<%=postOwner.getSchoolID()%>" class="name">(<%=postOwnerSchoolName%>)</a>
                         <span class="datetime">- <%=dateFormat.format(allMsgsOfThisBoard.get(i).getInsertDate())%></span>
                         <span class="body">
-                            <a href="../postDetail.jsp?postID=<%=allMsgsOfThisBoard.get(i).getPostID()%>" style="color: black"><%=allMsgsOfThisBoard.get(i).getOriginalMessage()%></a>
+                            <a href="../post/postDetail.jsp?postID=<%=allMsgsOfThisBoard.get(i).getPostID()%>" style="color: black"><%=allMsgsOfThisBoard.get(i).getOriginalMessage()%></a>
                             <br/>
                             <%
                                 for (int j = 0; j < allMsgsOfThisBoard.get(i).getPostTags().size(); j++) {
