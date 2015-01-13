@@ -3,7 +3,7 @@
     Created on : Nov 28, 2013, 11:03:59 AM
     Author     : yetkin.timocin
 --%>
-
+  
 <%@page import="com.tebeshir.classes.Student"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
